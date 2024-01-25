@@ -1,6 +1,16 @@
 wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+
   # Enable fallback hotspot (captive portal) in case wifi connection fails
   ap:
+    ssid: "Alarm-Panel Fallback Hotspot"
+    password: "grdqDABkaGMW"
+
+  manual_ip:
+    static_ip: !secret konnected-ip
+    gateway: !secret gateway
+    subnet: !secret subnet
 
 improv_serial:
 
